@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!-- Legal Footnote: This content is subject to copyright and should not be reproduced without permission. -->
+<!-- Written and created by Thomas John-Michael de Beer, feel free to contact me via tjdebeer@gmail.com  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -5,4 +11,94 @@
     <meta name="theme-color" content="#000000">
     <title>⧉</title>
     <link rel="apple-touch-icon" href="512x512.png">
+    <link rel="icon" href="icons/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
+        .container {
+            position: relative;
+            width: calc(100% - 22vw);
+            height: calc(100% - 22vw);
+        }
+
+        .menuButton, .ShareButton, .plus, .photo, .center {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .menuButton {
+            top: 0;
+            left: 0;
+        }
+
+        .ShareButton {
+            top: 0;
+            right: 0;
+        }
+
+        .plus {
+            bottom: 0;
+            left: 0;
+        }
+
+        .photo {
+            bottom: 0;
+            right: 0;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="MenuButton">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="white"/>
+            </svg>
+        </div>
+        <div class="ShareButton">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="white"/>
+            </svg>
+        </div>
+        <div class="plus">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="white"/>
+            </svg>
+        </div>
+        <div class="photo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="white"/>
+            </svg>
+        </div>
+        <div class="center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="white"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
